@@ -18,7 +18,6 @@ jobs:
           script: |
             cd /var/www/imx-buy-bot/
             git pull git@github.com:Terminev/imx-buy-bot.git
-            yarn install
             echo "Deploy OK"
             pm2 start "yarn -s buy-eth >> /home/terminev/buy-eth.log"
             pm2 start "yarn -s buy-imx >> /home/terminev/buy-imx.log"
