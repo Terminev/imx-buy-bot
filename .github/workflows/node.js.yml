@@ -22,5 +22,4 @@ jobs:
             echo "Deploy OK"
             pm2 delete all
             pm2 start "yarn -s buy-eth >> /home/terminev/logs/buy-eth.log"
-            pm2 start "yarn -s buy-imx >> /home/terminev/logs/buy-imx.log"
-            pm2 start "yarn -s buy-usdc >> /home/terminev/logs/buy-usdc.log"
+
