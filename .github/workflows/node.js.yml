@@ -20,4 +20,5 @@ jobs:
             git pull git@github.com:Terminev/imx-buy-bot.git
             yarn install
             echo "Deploy OK"
+            pm2 delete all
             pm2 start "yarn -s buy-eth >> /home/terminev/logs/buy-eth.log"
